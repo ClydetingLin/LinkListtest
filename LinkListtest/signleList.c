@@ -1,18 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-
-void insert_node();
-void display();
-
-void flashBuffer();
-
-struct student{
-	char name[20];
-	int score;
-	struct student *next;
-} *ptr, *head, *current, *prev, *modiyNode;
+#include "Header.h"
+#include "student.h"
 
 
 int main() {
@@ -47,63 +37,5 @@ int main() {
 			default:
 				printf("error, please select again! ");
 		}
-	}
-}
-
-void insert_node() {
-
-	ptr = (struct student*)malloc(sizeof(struct student));
-	printf("name :");
-	scanf("%s", ptr->name);
-	flashBuffer();
-
-
-	printf("score :");
-	scanf("%d", &ptr->score);
-	flashBuffer();
-
-	prev = head;
-	current = head->next;
-	while ((current!=NULL)&&(current->score	> ptr->score))
-	{
-		prev = current;
-		current = current->next;
-	}
-	ptr->next = current;
-	prev->next = ptr;
-
-
-
-}
-
-
-void display() {
-
-	int count = 0;
-	if (head->next == NULL) {
-		printf("Linked List is NULL!!");
-	}
-	else
-	{
-		printf("\n");
-		printf(" name		score\n");
-		printf("-------------------------\n");
-		current = head->next;
-		while (current!=NULL)
-		{
-			printf(" %-12s %3d\n", current->name,current->score);
-			count++;
-			current = current->next;
-		}
-		printf("-------------------------\n");
-		printf(" Total is %d log\n", count);
-	}
-}
-
-void flashBuffer() {
-
-	while (getchar()!='\n')
-	{
-		continue;
 	}
 }
