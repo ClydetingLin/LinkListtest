@@ -72,6 +72,8 @@ void insert_node() {
 	ptr->next = current;
 	prev->next = ptr;
 
+
+
 }
 
 
