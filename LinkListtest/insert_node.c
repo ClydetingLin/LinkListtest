@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include "Header.h"
 #include "student.h"
+#endif // !LINKEDLIST_INSERT_NODE_H_
 
 void insert_node() {
 
@@ -32,4 +33,3 @@ void insert_node() {
 
 
 }
-#endif // !LINKEDLIST_INSERT_NODE_H_

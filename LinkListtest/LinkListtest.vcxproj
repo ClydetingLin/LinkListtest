@@ -111,6 +111,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="delete_node.c" />
     <ClCompile Include="display.c" />
     <ClCompile Include="flashBuffer.c" />
     <ClCompile Include="insert_node.c" />

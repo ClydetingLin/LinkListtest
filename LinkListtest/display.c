@@ -1,12 +1,14 @@
 #ifndef  LinkList_DISPLAY_H_
 #define LinkList_DISPLAY_H_
 
+
 #include <stdio.h>
 #include <stdlib.h>
 
 #include "Header.h"
 #include "student.h"
 
+#endif // ! LinkList_DISPLAY_H_
 void display() {
 
 	int count = 0;
@@ -30,4 +32,3 @@ void display() {
 	}
 }
 
-#endif // ! LinkList_DISPLAY_H_

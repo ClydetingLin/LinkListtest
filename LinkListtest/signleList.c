@@ -28,6 +28,9 @@ int main() {
 			case'1':
 				insert_node();
 				break;
+			case '2':
+				delete_node();
+				break;
 			case'4':
 				display();
 				break;
